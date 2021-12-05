@@ -5,7 +5,7 @@ class Solution:
         if not digits:
             return []
         dict_d = {"2":"abc", "3":"def", "4":"ghi", "5":"jkl", "6":"mno", "7":"pqrs", "8":"tuv", "9":"wxyz"}
-        return reduce(lambda pre, digit_cur: [x+y for x in pre for y in dict_d[digit_cur]] digits, [''])
+        return reduce(lambda pre, digit_cur: [x+y for x in pre for y in dict_d[digit_cur]], digits, [''])
 
 
 
